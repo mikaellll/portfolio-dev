@@ -1,0 +1,17 @@
+﻿
+app\globals.css:1:@import 
+"tailwindcss";
+app\globals.css:2:@import url
+('https://fonts.googleapis.co
+m/css2?family=Lato:wght@300&d
+isplay=swap');
+app\globals.css:3:@import url
+('https://fonts.googleapis.co
+m/css2?family=Roboto:wght@900
+&display=swap');
+app\globals.css:4:@import url
+('https://fonts.googleapis.co
+m/css2?family=Patua+One&famil
+y=Righteous&display=swap');
+
+

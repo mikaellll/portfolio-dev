@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@theme {
+    --color-aqua: #00ffff;
+    --color-tomato: #ff6347;
+    --font-lato: Lato, sans-serif;
+    --font-righteous: Righteous, cursive;
+    --font-roboto: Roboto, sans-serif;
+}
+
+/* --- Reset & Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* =========================
+   CANVAS DOTS ANIMATION (About page)
+   ========================= */
+@keyframes canvas-rotation {
+    from {
+        transform: translate(-50%, -50%) rotate(0) scale(1.2);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) scale(1.2);
+    }
+}
+
+@keyframes reverse-rotation {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes dot-x-axis {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+
+    25%,
+    75% {
+        transform: translateX(250px);
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    50% {
+        transform: translateX(500px);
+        animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+}
+
+@keyframes dot-y-axis {
+
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    12.5%,
+    62.5% {
+        transform: translateY(-125px);
+        animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+
+    37.5%,
+    87.5% {
+        transform: translateY(125px);
+        animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+}
+
+.canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+}
+
+.canvas--aqua {
+    animation: canvas-rotation 120s infinite linear;
+}
+
+.canvas--aqua .dot-text {
+    animation: reverse-rotation 120s infinite linear;
+}
+
+.canvas--aqua .dot {
+    color: var(--color-aqua);
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
+.canvas--gold {
+    animation: canvas-rotation 90s 6s infinite linear;
+}
+
+.canvas--gold .dot-text {
+    animation: reverse-rotation 90s 6s infinite linear;
+}
+
+.canvas--gold .dot {
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.canvas--tomato {
+    animation: canvas-rotation 150s 12s infinite linear;
+}
+
+.canvas--tomato .dot-text {
+    animation: reverse-rotation 150s 12s infinite linear;
+}
+
+.canvas--tomato .dot {
+    color: var(--color-tomato);
+    text-shadow: 0 0 8px rgba(255, 99, 71, 0.4);
+}
+
+.dot {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+}
+
+.dot-y-wrapper {
+    display: inline-block;
+}
+
+.dot-text {
+    display: inline-block;
+    font-family: var(--font-righteous);
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    white-space: nowrap;
+}
