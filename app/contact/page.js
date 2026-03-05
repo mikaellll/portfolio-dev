@@ -37,7 +37,7 @@ export default function ContactPage() {
               <div>
                 <span className="block font-lato text-[12px] text-gray-400 uppercase tracking-widest mb-1">Email</span>
                 <a href="mailto:contact@mickael.art" className="font-lato text-[15px] text-white hover:text-aqua transition-colors duration-300">
-                  contact@mickael.art
+                  contact@mickaelcode.com
                 </a>
               </div>
             </div>

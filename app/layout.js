@@ -3,7 +3,7 @@ import './v4.css';
 export const metadata = {
   title: 'Mickael | Full-Stack Web Developer',
   description:
-    'Mickael – Développeur web full-stack basé à Marseille. Spécialisé en React, Next.js, Django, Vue.js et WordPress.',
+    'Mickael – Développeur web full-stack basé à Marseille. Spécialisé en React, Next.js, Django et WordPress.',
 };
 
 export default function RootLayout({ children }) {

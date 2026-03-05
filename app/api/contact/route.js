@@ -18,7 +18,7 @@ export async function POST(request) {
       port: 465,
       secure: true,
       auth: {
-        user: process.env.SMTP_USER,       // contact@mickael.art
+        user: process.env.SMTP_USER,       // contact@mickaelcode.com
         pass: process.env.SMTP_PASSWORD,   // Votre mot de passe email OVH
       },
     });

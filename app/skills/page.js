@@ -5,7 +5,7 @@ import TechBento from '@/components/TechBento';
 
 export const metadata = {
   title: 'Compétences | Mickael – Développeur Full-Stack',
-  description: 'Compétences techniques de Mickael : Django, React, Vue.js, Tailwind, Express.',
+  description: 'Compétences techniques de Mickael : Django, React, Next.js Tailwind, wordpress.'
 };
 
 export default function SkillsPage() {
@@ -21,7 +21,7 @@ export default function SkillsPage() {
         {/* Skills text */}
         <div className="w-full lg:w-[45%] text-aqua">
           <h1 className="text-[36px] lg:text-[46px] pb-[35px] font-righteous">
-            Compétences & Expériences
+            Compétences et Expériences
           </h1>
           <p className="text-white text-justify text-[16px] leading-relaxed">
             Je crée des sites web réactifs performants, qui sont rapides, faciles à utiliser et construits selon les meilleures pratiques. Mon domaine d&apos;expertise principal est le développement front-end, HTML, CSS, JS, la création de petites et moyennes applications web, de fonctionnalités, d&apos;animations, et l&apos;intégration de maquettes interactives.
