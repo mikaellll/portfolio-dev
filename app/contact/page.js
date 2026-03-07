@@ -4,8 +4,8 @@ import BackgroundDecor from '@/components/BackgroundDecor';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata = {
-  title: 'Contact | Mickael – Développeur Full-Stack',
-  description: 'Contactez Mickael pour vos projets de développement web.',
+  title: 'Contact | Recruter un développeur web à Marseille',
+  description: 'Projet de création de site internet ou application web à Marseille ? Contactez-moi pour un devis gratuit et personnalisé.',
 };
 
 export default function ContactPage() {

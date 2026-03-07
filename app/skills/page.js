@@ -4,8 +4,8 @@ import BackgroundDecor from '@/components/BackgroundDecor';
 import TechBento from '@/components/TechBento';
 
 export const metadata = {
-  title: 'Compétences | Mickael – Développeur Full-Stack',
-  description: 'Compétences techniques de Mickael : Django, React, Next.js Tailwind, wordpress.'
+  title: 'Compétences | Mickael – Expert React & Next.js à Marseille',
+  description: 'Expertise technique en développement web : React, Next.js, Django et WordPress pour vos projets à Marseille.'
 };
 
 export default function SkillsPage() {

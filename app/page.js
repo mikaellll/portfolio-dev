@@ -4,6 +4,11 @@ import Navbar from '@/components/Navbar';
 import SocialSidebar from '@/components/SocialSidebar';
 import BackgroundDecor from '@/components/BackgroundDecor';
 
+export const metadata = {
+  title: 'Mickael | Développeur Web Full-Stack à Marseille',
+  description: 'Mickael, développeur web freelance à Marseille. Création de sites internet, applications web et solutions digitales sur mesure avec Next.js et React.',
+};
+
 export default function HomePage() {
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black text-white font-lato">
@@ -16,10 +21,10 @@ export default function HomePage() {
         
         {/* Texts */}
         <div className="relative w-fit">
-          <div className="text-[25vw] sm:text-[120px] lg:text-[175px] font-righteous leading-[0.8] tracking-tight">
+          <h1 className="text-[25vw] sm:text-[120px] lg:text-[175px] font-righteous leading-[0.8] tracking-tight">
             Web
-          </div>
-          <div className="text-[9.5vw] sm:text-[40px] lg:text-[55px] tracking-[3.5vw] sm:tracking-[15px] lg:tracking-[23px] font-righteous text-white/90 pl-[1vw] sm:pl-[5px] lg:pl-[15px] -mt-[1vw] sm:-mt-2 lg:-mt-4">
+          </h1>
+          <div className="text-[9.5vw] sm:text-[40px] lg:text-[55px] tracking-[3.5vw] sm:tracking-[15px] lg:tracking-[23px] font-righteous text-white/90 pl-[1vw] sm:pl-[5px] lg:pl-[15px] -mt-[1vw] sm:-mt-2 lg:-mt-4 uppercase">
             Developer
           </div>
         </div>
@@ -28,7 +33,7 @@ export default function HomePage() {
         <div className="absolute top-[100px] left-[60%] sm:left-[65%] -translate-x-1/2 z-[-1] flex lg:hidden opacity-50 pointer-events-none w-[600px] justify-center">
           <Image
             src="/img/profil_portfolio.png"
-            alt="Photo de Mickael"
+            alt="Mickael, Développeur Web à Marseille"
             width={600}
             height={600}
             priority
@@ -40,13 +45,16 @@ export default function HomePage() {
         <div className="flex items-stretch mt-6 md:mt-10 mb-4 pl-[3px] md:pl-[5px] lg:pl-[12px] gap-3 md:gap-4">
           <div className="w-[2px] bg-aqua shrink-0" />
           <div className="flex flex-col justify-between py-1">
-            <div className="text-[16px] md:text-sm lg:text-base opacity-80">Hello,</div>
+            <p className="text-[16px] md:text-sm lg:text-base opacity-80">Hello,</p>
             <div className="text-[20px] md:text-lg lg:text-xl font-medium">
               I&apos;m <span className="text-tomato">Mickael</span>
             </div>
-            <div className="text-[24px] md:text-2xl lg:text-4xl font-righteous mt-0.5 md:mt-1">
-              Full-stack <span className="text-tomato">Web Developer</span>
-            </div>
+            <h2 className="text-[24px] md:text-2xl lg:text-4xl font-righteous mt-0.5 md:mt-1">
+              Création de <span className="text-tomato">sites internet</span> à Marseille
+            </h2>
+            <p className="hidden md:block text-xs md:text-sm opacity-60 mt-2 max-w-md">
+              Développeur Full-stack spécialisé dans la conception d&apos;applications web haute performance.
+            </p>
           </div>
         </div>
 

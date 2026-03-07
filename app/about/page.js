@@ -5,8 +5,8 @@ import BackgroundDecor from '@/components/BackgroundDecor';
 import CanvasDots from '@/components/CanvasDots';
 
 export const metadata = {
-  title: 'À Propos | Mickael – Développeur Full-Stack',
-  description: 'En savoir plus sur Mickael, développeur full-stack basé à Marseille.',
+  title: 'À Propos | Mickael – Développeur Full-Stack à Marseille',
+  description: 'Découvrez mon parcours de développeur web freelance à Marseille. Expert en React, Next.js et solutions digitales innovantes.',
 };
 
 export default function AboutPage() {

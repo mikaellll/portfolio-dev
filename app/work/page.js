@@ -3,8 +3,8 @@ import SocialSidebar from '@/components/SocialSidebar';
 import BackgroundDecor from '@/components/BackgroundDecor';
 
 export const metadata = {
-  title: 'Projets | Mickael – Développeur Full-Stack',
-  description: 'Projets et réalisations de Mickael en développement web.',
+  title: 'Projets | Mickael – Création de site internet à Marseille',
+  description: 'Portfolio de réalisations web à Marseille : sites vitrines, e-commerce et applications Next.js / React.',
 };
 
 import Image from 'next/image';
@@ -14,7 +14,7 @@ const projects = [
   { img: '/projects/new_proj2.png', alt: 'Landing page IA Startup' },
   { img: '/projects/real3.png', alt: 'Site architecture & immobilier' },
   { img: '/projects/gen2.png', alt: 'Portfolio Agence Digitale' },
-  { img: '/projects/vcar_desktop.png', imgTablet: '/projects/vcar_tablet.png', imgMobile: '/projects/vcar_mobile.png', alt: 'Plateforme de convoyage', link: 'https://v-car.company/' },
+  { img: '/projects/vcar_desktop.png', imgTablet: '/projects/vcar_tablet.png', imgMobile: '/projects/vcar_mobile.png', alt: 'Plateforme de convoyage V-Car', link: 'https://v-car.company/' },
   { img: '/projects/real6.png', alt: 'Agence branding & créative' }
 ];
 
@@ -28,6 +28,9 @@ export default function WorkPage() {
       <div className="relative flex flex-col items-center justify-center min-h-screen pt-[100px] lg:pt-0 pb-28 md:pb-10 z-10 w-full">
         <div className="w-full max-w-[1200px] flex flex-col items-center justify-center px-[10vw] sm:px-[10vw] lg:px-0 lg:mt-16 md:pl-20 lg:pl-0">
           
+          <h1 className="text-[36px] lg:text-[49px] font-righteous text-white mb-10 w-full text-left lg:px-0">
+            Réalisations & <span className="text-aqua">Projets Web</span>
+          </h1>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6 lg:gap-8">
             {projects.map((project, index) => {
               const isVcar = index === 4;
